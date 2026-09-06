@@ -513,6 +513,12 @@ select.form-input {
   flex-shrink: 0;
 }
 
+.badge svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
 .badge-green {
   background-color: rgba(52, 199, 89, 0.12);
   color: #34c759;
@@ -526,6 +532,11 @@ select.form-input {
 .badge-gray {
   background-color: rgba(110, 110, 115, 0.12);
   color: #6e6e73;
+}
+
+.badge-blue {
+  background-color: rgba(0, 113, 227, 0.1);
+  color: #0071e3;
 }
 
 /* Estilos para acciones dentro de la tabla */
