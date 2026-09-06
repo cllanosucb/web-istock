@@ -248,6 +248,10 @@ select.form-input {
   margin-bottom: 12px;
 }
 
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
 .form-actions {
   display: flex;
   align-items: center;
