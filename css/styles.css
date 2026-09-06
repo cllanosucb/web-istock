@@ -317,6 +317,139 @@ img {
   margin-bottom: 28px;
 }
 
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.page-header .page-title {
+  margin-bottom: 0;
+}
+
+/* Estilos para tablas de datos */
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #86868b;
+  padding: 0 16px 14px;
+  border-bottom: 1px solid #ececec;
+  white-space: nowrap;
+}
+
+.data-table th:first-child,
+.data-table td:first-child {
+  padding-left: 4px;
+}
+
+.data-table td {
+  padding: 16px;
+  border-bottom: 1px solid #ececec;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.cell-imei {
+  font-family: "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
+  font-size: 13px;
+  color: #6e6e73;
+}
+
+.cell-model {
+  font-weight: 600;
+}
+
+/* Estilos para badges de estado (batería, disponibilidad) */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: currentColor;
+  flex-shrink: 0;
+}
+
+.badge-green {
+  background-color: rgba(52, 199, 89, 0.12);
+  color: #34c759;
+}
+
+.badge-orange {
+  background-color: rgba(255, 149, 0, 0.12);
+  color: #ff9500;
+}
+
+.badge-gray {
+  background-color: rgba(110, 110, 115, 0.12);
+  color: #6e6e73;
+}
+
+/* Estilos para acciones dentro de la tabla */
+
+.table-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: #6e6e73;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-icon:hover {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+}
+
+.btn-icon-danger:hover {
+  background-color: rgba(255, 59, 48, 0.1);
+  color: #ff3b30;
+}
+
 /* Estilos para las métricas del dashboard */
 
 .metrics-grid {
