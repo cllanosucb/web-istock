@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iStock — Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand sidebar-brand">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="7" y="2.5" width="10" height="19" rx="2.5" />
+          <path d="M10.5 18.5h3" />
+        </svg>
+      </div>
+      <span class="brand-name">iStock</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="sidebar-link active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 11.5 12 4l8 7.5" />
+          <path d="M6 10v9a1 1 0 0 0 1 1h3v-6h4v6h3a1 1 0 0 0 1-1v-9" />
+        </svg>
+        Dashboard
+      </a>
+      <a href="inventario.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3.5 8 12 4l8.5 4-8.5 4-8.5-4Z" />
+          <path d="M3.5 8v8L12 20l8.5-4V8" />
+          <path d="M12 12v8" />
+        </svg>
+        Inventario
+      </a>
+      <a href="ventas.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 8h12l-1 12H7L6 8Z" />
+          <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+        </svg>
+        Ventas
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button id="logout-btn" class="sidebar-logout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 4H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3" />
+          <path d="M15 16l4-4-4-4" />
+          <path d="M19 12H9" />
+        </svg>
+        Cerrar sesión
+      </button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <h1 class="page-title">Dashboard</h1>
+
+    <section class="metrics-grid">
+      <div class="card">
+        <div class="metric-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3.5 8 12 4l8.5 4-8.5 4-8.5-4Z" />
+            <path d="M3.5 8v8L12 20l8.5-4V8" />
+            <path d="M12 12v8" />
+          </svg>
+        </div>
+        <div class="metric-label">Total de iPhones en Stock</div>
+        <div class="metric-value">128</div>
+      </div>
+
+      <div class="card">
+        <div class="metric-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 20V10" />
+            <path d="M12 20V4" />
+            <path d="M20 20v-6" />
+          </svg>
+        </div>
+        <div class="metric-label">Ventas del Mes</div>
+        <div class="metric-value">34</div>
+      </div>
+
+      <div class="card">
+        <div class="metric-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 3 2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L12 3Z" />
+          </svg>
+        </div>
+        <div class="metric-label">Modelo más vendido</div>
+        <div class="metric-value">iPhone 12</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-title">Últimas 5 transacciones</div>
+
+      <ul class="transaction-list">
+        <li>
+          <div class="transaction-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17 17 7" />
+              <path d="M9 7h8v8" />
+            </svg>
+          </div>
+          <div class="transaction-info">
+            <span class="transaction-model">iPhone 13 Pro Max 256GB</span>
+            <span class="transaction-date">05/09/2026</span>
+          </div>
+          <span class="transaction-amount">$680</span>
+        </li>
+        <li>
+          <div class="transaction-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17 17 7" />
+              <path d="M9 7h8v8" />
+            </svg>
+          </div>
+          <div class="transaction-info">
+            <span class="transaction-model">iPhone 11 128GB</span>
+            <span class="transaction-date">04/09/2026</span>
+          </div>
+          <span class="transaction-amount">$320</span>
+        </li>
+        <li>
+          <div class="transaction-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17 17 7" />
+              <path d="M9 7h8v8" />
+            </svg>
+          </div>
+          <div class="transaction-info">
+            <span class="transaction-model">iPhone 12 Mini 64GB</span>
+            <span class="transaction-date">03/09/2026</span>
+          </div>
+          <span class="transaction-amount">$290</span>
+        </li>
+        <li>
+          <div class="transaction-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17 17 7" />
+              <path d="M9 7h8v8" />
+            </svg>
+          </div>
+          <div class="transaction-info">
+            <span class="transaction-model">iPhone XR 64GB</span>
+            <span class="transaction-date">02/09/2026</span>
+          </div>
+          <span class="transaction-amount">$210</span>
+        </li>
+        <li>
+          <div class="transaction-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17 17 7" />
+              <path d="M9 7h8v8" />
+            </svg>
+          </div>
+          <div class="transaction-info">
+            <span class="transaction-model">iPhone 12 Pro 128GB</span>
+            <span class="transaction-date">01/09/2026</span>
+          </div>
+          <span class="transaction-amount">$450</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
