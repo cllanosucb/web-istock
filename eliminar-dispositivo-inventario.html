@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iStock — Eliminar Equipo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand sidebar-brand">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="7" y="2.5" width="10" height="19" rx="2.5" />
+          <path d="M10.5 18.5h3" />
+        </svg>
+      </div>
+      <span class="brand-name">iStock</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 11.5 12 4l8 7.5" />
+          <path d="M6 10v9a1 1 0 0 0 1 1h3v-6h4v6h3a1 1 0 0 0 1-1v-9" />
+        </svg>
+        Dashboard
+      </a>
+      <a href="inventario.html" class="sidebar-link active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3.5 8 12 4l8.5 4-8.5 4-8.5-4Z" />
+          <path d="M3.5 8v8L12 20l8.5-4V8" />
+          <path d="M12 12v8" />
+        </svg>
+        Inventario
+      </a>
+      <a href="ventas.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 8h12l-1 12H7L6 8Z" />
+          <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+        </svg>
+        Ventas
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button id="logout-btn" class="sidebar-logout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 4H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3" />
+          <path d="M15 16l4-4-4-4" />
+          <path d="M19 12H9" />
+        </svg>
+        Cerrar sesión
+      </button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <h1 class="page-title">Eliminar Equipo</h1>
+
+    <section class="card confirm-card">
+      <div class="alert-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 7h16" />
+          <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
+          <path d="M6 7l1 13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-13" />
+        </svg>
+      </div>
+
+      <div class="confirm-title">¿Eliminar este equipo del inventario?</div>
+      <div class="confirm-text">Esta acción no se puede deshacer. El equipo se quitará permanentemente del listado de inventario.</div>
+
+      <div class="summary-row">
+        <span class="summary-label">Modelo</span>
+        <span class="summary-value" id="summary-modelo">—</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">IMEI</span>
+        <span class="summary-value" id="summary-imei">—</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">Capacidad / Color</span>
+        <span class="summary-value" id="summary-detalle">—</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">Precio Base</span>
+        <span class="summary-value" id="summary-precio">—</span>
+      </div>
+
+      <div class="form-actions">
+        <a href="inventario.html" class="btn-secondary">Cancelar</a>
+        <button type="button" id="confirm-delete-btn" class="btn-danger">Eliminar Equipo</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/eliminar-dispositivo-inventario.js"></script>
+</body>
+</html>

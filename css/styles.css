@@ -72,7 +72,8 @@ img {
 /* Estilos para botones */
 
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-danger {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -122,6 +123,84 @@ img {
 .btn-secondary:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.btn-danger {
+  background-color: #ff3b30;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 59, 48, 0.28);
+}
+
+.btn-danger:hover {
+  background-color: #ff2d20;
+  box-shadow: 0 6px 16px rgba(255, 59, 48, 0.34);
+  transform: translateY(-1px);
+}
+
+.btn-danger:active {
+  background-color: #d92e24;
+  box-shadow: 0 2px 8px rgba(255, 59, 48, 0.28);
+  transform: translateY(0);
+}
+
+/* Estilos para la confirmación de eliminar equipo */
+
+.confirm-card {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.alert-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background-color: rgba(255, 59, 48, 0.1);
+  color: #ff3b30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.alert-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.confirm-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.confirm-text {
+  font-size: 14px;
+  color: #6e6e73;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #ececec;
+  font-size: 14px;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-label {
+  color: #6e6e73;
+}
+
+.summary-value {
+  font-weight: 600;
 }
 
 /* Estilos para formularios */
